@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_weight="1"
+        android:id="@+id/friend_detail_lv"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+    <!--底部-->
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+       >
+
+        <EditText
+            android:id="@+id/edit"
+            android:hint="哈哈哈哈"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_marginLeft="3dp"
+            android:id="@+id/emoji"
+            android:src="@drawable/btn_emoji_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/send"
+            android:src="@drawable/biz_chat_comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_editStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="今天你动弹了吗？"
+        android:padding="3dp"
+        android:textSize="20sp"
+        android:background="@null"
+        />
+
+    <RelativeLayout
+        android:paddingBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@id/et_editStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:padding="3dp"
+            android:id="@+id/ib_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/message_count" />
+        <TextView
+            android:id="@+id/tv_count"
+            android:text="160"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_count"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RadioGroup
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_bottom_background"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+        <!-- checked : 是否选中RadioButton true:选中,false:不选中
+             button : 设置单选按钮的样式,@null : 不使用样式
+             drawableTop : 在文本的顶部设置图片
+        -->
+        <RadioButton
+            android:id="@+id/plus_message_picture"
+            style="@style/PlusMessageBottomButton"
+            android:drawableTop="@drawable/plus_message_picture"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/plus_message_aite"
+            style="@style/PlusMessageBottomButton"
+            android:drawableTop="@drawable/plus_message_aite" />
+
+        <RadioButton
+            android:id="@+id/plus_message_hash_mark"
+            style="@style/PlusMessageBottomButton"
+            android:drawableTop="@drawable/plus_message_hash_mark" />
+
+        <RadioButton
+            android:id="@+id/plus_message_smiling_face"
+            style="@style/PlusMessageBottomButton"
+            android:drawableTop="@drawable/plus_message_smiling_face" />
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:id="@+id/clear_dialog">
+
+    <TextView
+        android:id="@+id/myclear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:text="是否清空内容"
+        android:textColor="#121212"
+        android:gravity="center_vertical"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/myedit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            style="@style/ButtonWhite"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:textColor="#6b6b6b"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/myok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            style="@style/ButtonWhite"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text="确定"/>
+    </LinearLayout>
+</LinearLayout>

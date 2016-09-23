@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!--头像-->
+        <ImageView
+            android:id="@+id/find_friend_iv_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+        <!--第一行  昵称  日期-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/find_friend_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+
+                    android:id="@+id/find_friend_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--描述-->
+            <TextView
+                android:id="@+id/find_friend_tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+                <!--内容-->
+            <TextView
+                android:focusable="false"
+                android:clickable="true"
+                android:id="@+id/find_friend_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="content" />
+
+           <!-- 图片-->
+            <uk.co.senab.photoview.PhotoView
+                android:visibility="gone"
+                android:id="@+id/tweetimage"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--手机-->
+                <TextView
+                    android:id="@+id/find_friend_tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/platform"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/comment_reply_container_bg"
+                    android:text="sdfdfsdfdf"
+                    android:visibility="gone"
+                    android:id="@+id/objectname_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--评论个数-->
+                <TextView
+                    android:id="@+id/find_friend_tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_comment_count"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

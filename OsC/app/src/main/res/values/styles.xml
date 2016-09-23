@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="ActionBarBaseTheme">
+        <!-- Customize your theme here. -->
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/ActionBarBaseStyle</item>
+    </style>
+
+
+    <style name="ActionBarBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/ActionBarBaseStyle</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    //把标题字体改为白色
+    <style name="TitleStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="SubStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    //actionbar的样式
+    <style name="ActionBarBaseStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/actionbar_backgroung</item>
+        <item name="background">@color/actionbar_backgroung</item>
+        <item name="android:titleTextStyle">@style/TitleStyle</item>
+        <item name="android:subtitleTextStyle">@style/SubStyle</item>
+    
+    </style>
+
+    <style name="mainActivityRadioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="lp_dongtan_expression_base">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+</resources>

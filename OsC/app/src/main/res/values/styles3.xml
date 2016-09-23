@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="PlusMessageBottomButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ButtonWhite" >
+        <!--         确定取消 白色按钮 -->
+        <item name="android:background">@drawable/btn_white_selector</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageButton" >
+        <!--         弹一弹发送点击按钮 -->
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+</resources>

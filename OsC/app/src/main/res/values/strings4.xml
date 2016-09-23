@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="item_dongtan_listview_username">美女</string>
+    <string name="item_dongtan_listview_tv_content">妹子长得不错</string>
+    <string name="item_dongtan_listview_tv_praise_names">一票人都觉得她很美</string>
+    <string name="activity_dongtan_et_reply">回复内容</string>
+    <string name="dongtan_commit_time">一个月以前</string>
+    <string name="dongtan_device_type">Android</string>
+    <string name="dongtan_praise_amount">0</string>
+    <string name="dongtan_emoji_category_qq">QQ表情</string>
+    <string name="dongtan_emoji_category_emoji">Emoji表情</string>
+</resources>

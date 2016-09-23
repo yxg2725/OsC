@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.itheima.osc.view.PagerSlidingTabStrip
+            android:id="@+id/find_event_tab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/find_event_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+</LinearLayout>

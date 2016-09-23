@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <com.meg7.widget.CircleImageView
+        android:id="@+id/item_dongtan_listview_iv_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test_portrait" />
+
+    <TextView
+        android:id="@+id/item_dongtan_listview_tv_username"
+        style="@style/dongtan_username_lp"
+        android:layout_alignTop="@+id/item_dongtan_listview_iv_icon"
+        android:layout_toRightOf="@+id/item_dongtan_listview_iv_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_dongtan_listview_tv_username"
+        android:layout_below="@+id/item_dongtan_listview_tv_username"
+        android:layout_toRightOf="@+id/item_dongtan_listview_iv_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_dongtan_listview_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_dongtan_listview_tv_content"
+            android:textColor="#000" />
+
+        <GridLayout
+            android:id="@+id/item_dongtan_listview_gl_images"
+            style="@style/dongtan_gl_images_dimen"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/item_dongtan_listview_tv_commit_time"
+                style="@style/item_dongtan_listview_addition_words"
+                android:text="6小时前" />
+
+            <TextView
+                android:id="@+id/item_dongtan_listview_tv_commit_phone_type"
+                style="@style/item_dongtan_listview_addition_words"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_dongtan_listview_tv_commit_time"
+                android:text="@string/dongtan_device_type" />
+
+            <TextView
+                android:id="@+id/item_dongtan_listview_tv_praise"
+                style="@style/item_dongtan_listview_addition_right_part_align"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/item_dongtan_listview_tv_comment"
+                android:drawableLeft="@drawable/ic_unlike" />
+
+            <TextView
+                android:id="@+id/item_dongtan_listview_tv_comment"
+                style="@style/item_dongtan_listview_addition_right_part_align"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_comment_count" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_dongtan_listview_tv_praise_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_reply_container_bg"
+            android:gravity="center_vertical"
+            android:text="@string/item_dongtan_listview_tv_praise_names"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="item_dongtan_listview_addition_word">#7F7F7F</color>
+    <color name="actionbar_backgroung">#40AA53</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="lightBlue">#18BE40</color>
+</resources>

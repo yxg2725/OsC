@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <!-- 头像-->
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+       <!-- 昵称-->
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/name"
+            android:text="dfdfd"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+       <!-- 日期-->
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/time"
+            android:text="dfdfd"
+            android:layout_toRightOf="@+id/icon"
+           android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--手机-->
+        <TextView
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/platform"
+            android:drawablePadding="4dp"
+            android:layout_alignBottom="@+id/time"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/phone"
+            android:text="dfdfd"
+            android:layout_alignParentRight="true"
+           android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+<!--内容-->
+    <TextView
+        android:id="@+id/content"
+
+        android:layout_marginTop="10dp"
+        android:text="dfdfdfdfdfdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--点赞和评论图标-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:src="@drawable/ic_likeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/commentCount"
+
+            android:src="@drawable/ic_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--最后一行  谁谁谁点赞了-->
+    <TextView
+        android:id="@+id/other_people"
+        android:layout_marginTop="10dp"
+        android:text="ssssss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

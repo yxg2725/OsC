@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itheima.osc">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" android:label="发现">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.FriendResfreshActivity" android:label="朋友圈"></activity>
+        <activity android:name=".activity.EventActivity" android:label="活动"></activity>
+        <activity android:name=".activity.FirendItemActivity" android:label="博客详情"></activity>
+        <activity android:name=".activity.FirendItemResfreshActivity2" android:label="动态详情"></activity>
+        <activity android:name="com.itheima.osc.fragment.ShakeActivity" android:label="摇一摇"></activity>
+
+    </application>
+
+</manifest>

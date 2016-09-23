@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/find_friend"
+            style="@style/FindHomeItemStyle"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_explore_friends"
+            android:text="朋友圈" />
+
+        <TextView
+            android:id="@+id/find_find_people"
+            style="@style/FindHomeItemStyle"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_explore_finduser"
+            android:text="找人" />
+
+        <TextView
+            android:id="@+id/find_activity"
+            style="@style/FindHomeItemStyle"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/icon_explore_event"
+            android:text="活动" />
+
+        <TextView
+            android:id="@+id/find_scan"
+            style="@style/FindHomeItemStyle"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_explore_scan"
+            android:text="扫一扫" />
+
+        <TextView
+            android:id="@+id/find_shake"
+            style="@style/FindHomeItemStyle"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/icon_explore_shake"
+            android:text="摇一摇" />
+    </LinearLayout>
+
+</RelativeLayout>

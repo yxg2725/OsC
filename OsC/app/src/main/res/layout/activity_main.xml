@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--一个linearlayout加一个rediogroup-->
+        <LinearLayout
+            android:id="@+id/main_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/news_rb"
+                android:textColor="@color/selector_textcolor_main"
+                android:drawableTop="@drawable/selector_news"
+               style="@style/mainActivityRadioButtonStyle"
+                android:text="@string/news"
+                 />
+            <RadioButton
+                android:id="@+id/tweet_rb"
+                android:textColor="@color/selector_textcolor_main"
+                android:drawableTop="@drawable/selector_tweet"
+                style="@style/mainActivityRadioButtonStyle"
+                android:text="@string/tweet"/>
+            <RadioButton
+                android:textColor="@color/selector_textcolor_main"
+                android:visibility="invisible"
+                android:drawableTop="@drawable/selector_tweet"
+                style="@style/mainActivityRadioButtonStyle" />
+            <RadioButton
+                android:id="@+id/explore_rb"
+                android:textColor="@color/selector_textcolor_main"
+                android:drawableTop="@drawable/selector_explore"
+                style="@style/mainActivityRadioButtonStyle"
+                android:text="@string/explore"/>
+            <RadioButton
+                android:id="@+id/me_rb"
+                android:textColor="@color/selector_textcolor_main"
+                android:drawableTop="@drawable/selector_me"
+                style="@style/mainActivityRadioButtonStyle"
+                android:text="@string/me"
+                 />
+        </RadioGroup>
+            <ImageButton
+                android:id="@+id/main_quickOption"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_quickoption"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="200dp"
+        android:background="#E2E2E2"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+        <ListView
+            android:layout_margin="6dp"
+            android:id="@+id/main_start_lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:clickable="true"
+                android:textSize="15dp"
+                android:text="设置"
+                android:textColor="@color/selector_textcolor_press"
+                android:drawableLeft="@drawable/selector_drawerlayout_setting"/>
+
+            <TextView
+                android:id="@+id/drawerlayout_exit"
+                android:layout_marginLeft="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/selector_textcolor_press"
+                android:clickable="true"
+                android:textSize="15dp"
+                android:text="退出"
+                android:drawableLeft="@drawable/selector_drawerlayout_exit"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
